@@ -1,0 +1,96 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 330px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 18px 0 20px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid hsl(0, 0%, 7%);
+  box-shadow: 5px 5px rgba(0, 0, 0, 1);
+  z-index: 4;
+}
+.background-illustration {
+  /* height: 300px; */
+  /* width: 320px; */
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 8px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.learning {
+  width: 70px;
+  height: auto;
+  background-color: hsl(47, 88%, 63%);
+  padding: 3.5px 3.5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.publish {
+  font-size: 14px;
+  font-weight: 600;
+}
+.description {
+  text-align: left;
+}
+.heading {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+.heading:hover {
+  color: hsl(47, 88%, 63%);
+}
+.content {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: hsl(0, 0%, 50%);
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.name {
+  font-size: 14px;
+  font-weight: 800;
+}
+.profile-picture {
+  width: 35px;
+  height: 35px;
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    width: 70%; /* Adjust width for smaller screens */
+    min-width: 300px; /* Set a minimum width */
+    padding: 0 20px 0 20px;
+  }
+  .background-illustration {
+    /* height: 300px; */
+    /* width: 320px; */
+    width: 100%;
+    vertical-align: bottom;
+    border-radius: 8px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
